@@ -11,7 +11,7 @@ import cv2
 from PIL import Image
 
 def main():
-    os.chdir('/home/pi/DeepPiCar/models/object_detection')
+    os.chdir('{}/src/DeepPiCar/models/object_detection'.format(os.environ['HOME']))
     
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -30,7 +30,7 @@ def main():
     # initialize open cv
     IM_WIDTH = 640
     IM_HEIGHT = 480
-    camera = cv2.VideoCapture(0)
+    camera = cv2.VideoCapture(-1)
     ret = camera.set(3,IM_WIDTH)
     ret = camera.set(4,IM_HEIGHT)
     
