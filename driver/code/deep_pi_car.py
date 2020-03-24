@@ -2,8 +2,8 @@ import logging
 import picar
 import cv2
 import datetime
-from hand_coded_lane_follower import HandCodedLaneFollower
-from objects_on_road_processor import ObjectsOnRoadProcessor
+from code.hand_coded_lane_follower import HandCodedLaneFollower
+from code.objects_on_road_processor import ObjectsOnRoadProcessor
 
 _SHOW_IMAGE = True
 
